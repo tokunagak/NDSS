@@ -1,0 +1,49 @@
+//ボタンモジュール
+
+.el_btn {
+    display: inline-block;
+    width: 300px;
+    max-width: 100%;
+    padding: 20px 10px;
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: #000;
+    font-size: 1.125rem;
+    text-align: center;
+    text-decoration: none;
+    transition: .25s;
+    
+    &:focus,&:hover {
+        background-color: transparent;
+        color: currentColor;
+    }
+}
+
+
+//見出し
+
+.el_lv4Heading {
+    font-size: 2rem;
+    line-height: 1.3;
+    margin-bottom: 40px;
+    font-weight: 700;
+}
+
+
+// コンテンツテキスト
+.el_txt {
+    font-size: 1.4rem;
+}
+
+
+
+//アイコン
+.window {
+    
+    &::after {
+        content: "\f24d";
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        margin-left: 8px;
+    }
+}

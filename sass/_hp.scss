@@ -1,0 +1,87 @@
+
+//ボーダー
+.hp_btGray {
+    border-top: 1px solid #f3f3f3;
+}
+
+
+//バックグラウンドカラー
+.hp_bgcGray {
+    background-color: #f3f3f3;
+}
+.hp_bgcBlue{
+    background-color: #0079a1;
+}
+
+.hp_bgcBlack {
+    background-color: #000;
+}
+
+
+//フォントカラー
+.hp_fcWhite {
+    color: #fff;
+}
+
+//位置調整
+.hp_tac {
+    text-align: center;
+}
+
+
+
+@for $value from 0 through 20 {
+    .mt_#{$value * 5} {
+        margin-top: 5px * $value !important;
+    }
+}
+
+
+@for $value from 0 through 20 {
+    .mb_#{$value * 5} {
+        margin-bottom: 5px * $value !important;
+    }
+}
+
+@for $value from 0 through 20 {
+    .pt_#{$value * 5} {
+        padding-top: 5px * $value !important;
+    }
+}
+
+
+@for $value from 0 through 20 {
+    .pb_#{$value * 5} {
+        padding-bottom: 5px * $value !important;
+    }
+}
+
+@media (max-width: 896px) {
+    
+    @for $value from 0 through 20 {
+        .mt_#{$value * 5 + '-sp'} {
+            margin-top: 5px * $value !important;
+        }
+    }
+    
+    @for $value from 0 through 20 {
+        .mb_#{$value * 5 + '-sp'} {
+            margin-bottom: 5px * $value !important;
+        }
+    }
+    
+    @for $value from 0 through 20 {
+        .pt_#{$value * 5 + '-sp'} {
+            padding-top: 5px * $value !important;
+        }
+    }
+    
+    @for $value from 0 through 20 {
+        .pb_#{$value * 5 + '-sp'} {
+            padding-bottom: 5px * $value !important;
+        }
+    }
+}
+
+
+

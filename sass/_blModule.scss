@@ -1,0 +1,44 @@
+//indexとお問い合わせのナビ
+
+.bl_horizNav_inner {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: -40px;
+    
+    
+    li {
+        width: calc(33.33333% - 26.76667px);
+        margin-right: 26.7667px;
+        margin-bottom: 40px;
+        font-size: 1.4rem;
+        padding-left: 1em;
+        text-indent: -.5em;
+        
+        
+        &:nth-of-type(3n) {
+            margin-right: 0;
+        }
+        
+        &::before {
+            content: "\f054";
+            display: inline-block;
+            font-family: "Font Awesome 6 Free";
+            font-weight: 900;
+            color: #000;
+        }
+        
+        .bl_horizNav_link {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.4rem;
+            transition: .25s;
+            
+            
+            
+            &:focus,&:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    
+}

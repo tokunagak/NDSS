@@ -1,0 +1,12 @@
+.ly_cont {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    
+    &_inner {
+        max-width: calc(1200px + 9.6%);
+        padding-right: 4.8%;
+        padding-left: 4.8%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}

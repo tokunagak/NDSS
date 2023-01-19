@@ -1,0 +1,141 @@
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+body {
+    color: #222;
+    font-family: Noto Sans,LocalNotoSans,Noto Sans JP,LocalNotoSansJP,sans-serif;
+    line-height: 1.5;
+}
+
+a {
+    color: #0069ff;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: top;
+}
+
+ol,ul {
+    list-style: none;
+}
+
+.bl_jumbotron {
+    height: 400px;
+    position: relative;
+    
+    img {
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+    }
+    
+    &_inner {
+        position: absolute;
+        bottom: 80px;
+        left: 0;
+        width: 100%;
+        padding-left: 48px;
+        
+        > *:last-child {
+            margin-bottom: 0;
+        }
+    }
+    
+    &_nav {
+        display: flex;
+        margin-bottom: 16px;
+        
+        > *:last-child {
+            margin-right: 0;
+        }
+        
+        li {
+            margin-right: 25px;
+            
+            .bl_jumbotron_link {
+                color: #fff;
+                text-decoration: none;
+                font-size: 1.2rem;
+            }
+        }
+    }
+    
+    &_ttl {
+        font-size: 4.7rem;
+        color: #fff;
+        margin-bottom: 8px;
+    }
+    
+    &_subTtl {
+        font-size: 1.4rem;
+        color: #fff;
+    }
+    
+}
+
+#index {
+    
+    .bl_horizNav_inner {
+        
+        .bl_horizNav_link {
+            
+            color: #337ab7;
+        }
+    }
+    
+    
+    
+    
+    > *:last-child {
+        margin-bottom: 0;
+    }
+}
+
+#contact {
+    
+    .el_txt {
+        margin-bottom: 40px;
+    }
+    
+    .bl_horizNav_inner {
+        
+        li {
+            &::before {
+                color: #fff;
+            }
+        }
+        
+        .bl_horizNav_link {
+            color: #fff;
+            
+        }
+    }
+    
+    > *:last-child {
+        margin-bottom: 0;
+    }
+}
+
+//ページトップまで
+
+.bl_toTop {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.4rem;
+    transition: .25s;
+    
+    .fa-arrow-up-long {
+        font-size: 2.3rem;
+
+    }
+    
+    &:focus,&:hover {
+        text-decoration: underline;
+    }
+}
